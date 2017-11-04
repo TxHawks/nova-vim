@@ -7,7 +7,7 @@
 function! s:highlight_helper(...)
   let l:syntax_group = a:1
   let l:foreground_color = a:2
-  let l:background_color = empty(a:3) ? "#3C4C55" : a:3
+  let l:background_color = empty(a:3) ? "#28363e" : a:3
   let l:gui = a:0 == 3 ? "None" : a:4
 
   exec "highlight " . l:syntax_group . " guifg=" . l:foreground_color . " guibg=" . l:background_color . " gui=" . l:gui . " cterm=NONE term=NONE"
@@ -28,7 +28,7 @@ let g:colors_name = "nova"
 call s:highlight_helper("Normal", "#C5D4DD", "")
 
 " NEOVIM TERMINAL MODE
-let g:terminal_color_0 = "#3C4C55"
+let g:terminal_color_0 = "#28363e"
 let g:terminal_color_1 = "#DF8C8C"
 let g:terminal_color_2 = "#A8CE93"
 let g:terminal_color_3 = "#DADA93"
@@ -63,8 +63,8 @@ call s:highlight_helper("NeomakeWarningSign", "#DF8C8C", "")
 " USER CURRENT STATE
 call s:highlight_helper("MatchParen", "#7FC1CA", "NONE")
 call s:highlight_helper("CursorLineNr", "#7FC1CA", "")
-call s:highlight_helper("Visual", "#3C4C55", "#7FC1CA")
-call s:highlight_helper("VisualNOS", "#3C4C55", "#7FC1CA")
+call s:highlight_helper("Visual", "#28363e", "#7FC1CA")
+call s:highlight_helper("VisualNOS", "#28363e", "#7FC1CA")
 call s:highlight_helper("Folded", "#7FC1CA", "")
 call s:highlight_helper("FoldColumn", "#7FC1CA", "")
 call s:highlight_helper("IncSearch", "#7FC1CA", "#1E272C")
@@ -76,16 +76,16 @@ call s:highlight_helper("MoreMsg", "#7FC1CA", "")
 call s:highlight_helper("ModeMsg", "#7FC1CA", "")
 call s:highlight_helper("StatusLine", "#7FC1CA", "#1E272C")
 call s:highlight_helper("StatusLineTerm", "#7FC1CA", "#1E272C")
-call s:highlight_helper("TabLineSel", "#7FC1CA", "#3C4C55")
-call s:highlight_helper("PmenuSel", "#556873", "#7FC1CA")
+call s:highlight_helper("TabLineSel", "#7FC1CA", "#28363e")
+call s:highlight_helper("PmenuSel", "#344750", "#7FC1CA")
 call s:highlight_helper("PmenuThumb", "#7FC1CA", "#7FC1CA")
-call s:highlight_helper("CtrlPMatch", "#3C4C55", "#7FC1CA")
+call s:highlight_helper("CtrlPMatch", "#28363e", "#7FC1CA")
 
 " VERSION CONTROL
-call s:highlight_helper("DiffAdd", "#3C4C55", "#A8CE93")
-call s:highlight_helper("DiffChange", "#3C4C55", "#F2C38F")
+call s:highlight_helper("DiffAdd", "#28363e", "#A8CE93")
+call s:highlight_helper("DiffChange", "#28363e", "#F2C38F")
 call s:highlight_helper("DiffDelete", "#DF8C8C", "")
-call s:highlight_helper("DiffText", "#3C4C55", "#F2C38F", "BOLD")
+call s:highlight_helper("DiffText", "#28363e", "#F2C38F", "BOLD")
 call s:highlight_helper("GitGutterAdd", "#A8CE93", "")
 call s:highlight_helper("GitGutterChange", "#F2C38F", "")
 call s:highlight_helper("GitGutterChangeDelete", "#F2C38F", "")
@@ -94,22 +94,22 @@ call s:highlight_helper("GitGutterDelete", "#DF8C8C", "")
 " OTHER
 call s:highlight_helper("SignColumn", "NONE", "")
 call s:highlight_helper("LineNr", "#6A7D89", "")
-call s:highlight_helper("CursorLine", "NONE", "#556873")
-call s:highlight_helper("CursorColumn", "NONE", "#556873")
-call s:highlight_helper("EndOfBuffer", "#556873", "")
+call s:highlight_helper("CursorLine", "NONE", "#344750")
+call s:highlight_helper("CursorColumn", "NONE", "#344750")
+call s:highlight_helper("EndOfBuffer", "#344750", "")
 call s:highlight_helper("VertSplit", "#1E272C", "")
 call s:highlight_helper("StatusLineNC", "#6A7D89", "#1E272C")
 call s:highlight_helper("StatusLineTermNC", "#6A7D89", "#1E272C")
 call s:highlight_helper("TabLine", "#6A7D89", "#1E272C")
 call s:highlight_helper("TabLineFill", "#1E272C", "#1E272C")
 call s:highlight_helper("ToolbarLine", "#6A7D89", "#1E272C")
-call s:highlight_helper("Pmenu", "#C5D4DD", "#556873")
+call s:highlight_helper("Pmenu", "#C5D4DD", "#344750")
 call s:highlight_helper("PmenuSbar", "#899BA6", "#899BA6")
-call s:highlight_helper("ColorColumn", "#556873", "")
+call s:highlight_helper("ColorColumn", "#344750", "")
 call s:highlight_helper("CtrlPStats", "#F2C38F", "")
-call s:highlight_helper("fzf1", "#3C4C55", "#556873")
-call s:highlight_helper("fzf2", "#3C4C55", "#556873")
-call s:highlight_helper("fzf3", "#3C4C55", "#556873")
+call s:highlight_helper("fzf1", "#28363e", "#344750")
+call s:highlight_helper("fzf2", "#28363e", "#344750")
+call s:highlight_helper("fzf3", "#28363e", "#344750")
 call s:highlight_helper("EasyMotionTarget", "#DF8C8C", "", "BOLD")
 call s:highlight_helper("EasyMotionTarget2First", "#F2C38F", "")
 call s:highlight_helper("EasyMotionTarget2Second", "#DADA93", "")

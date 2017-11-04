@@ -3,6 +3,14 @@ const syntaxGroups = require('nova-colors').syntaxGroups
 const ansiGroups = require('nova-colors').ansiGroups
 const versionControlGroups = require('nova-colors').versionControlGroups
 
+// Switch ansiGroups.normal.black and uiGroups.background (#3c4c55) with #28363e
+ansiGroups.normal.black = '#28363e';
+uiGroups.background = '#28363e';
+
+// Switch uiGroups.gray2 (#556873) with #344750
+uiGroups.gray2 = '#344750';
+
+
 const sourceString = `
 " ==================================================================
 " HIGHLIGHT HELPER
